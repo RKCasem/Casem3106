@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Note</title>
+    <style>
+        @font-face {
+            font-family: 'coolvetica';
+            src: url("coolvetica compressed hv.otf") format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'coolvetica', sans-serif;
+            scroll-behavior: smooth;
+            overflow: hidden; 
+            overflow-x: hidden; 
+            padding-top: 50px; 
+        }
+        .fullscreen-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .profile {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        .name {
+            font-size: 90px;
+            margin-top: 10px 0;
+    
+        }
+        .contact-info {
+            margin: 20px 0;
+            font-size: 30px;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content {
+            position: absolute;
+            top: 100vh;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px;
+            background: rgba(255, 255, 255, 0);
+            color: white;
+            max-width: 800px;
+            text-align: center;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.4;
+        }
+        .content p {
+            margin: 10px 0;
+    
+        }
+
+        @media (max-width: 768px) {
+            .scroll-button {
+                font-size: 4vw;
+                padding: 12px 25px;
+            }
+        }
+        @media (max-width: 480px) {
+            .scroll-button {
+                font-size: 5vw;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8); 
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000; 
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .adjustable-image {
+            width: 200px; 
+            height: auto; 
+            border-radius: 60%; 
+            margin-bottom: 20px; 
+            border: 5px solid white; 
+            object-fit: cover; 
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top">Home</a>
+        <a href="#content p">About Me</a>
+        
+        
+    </nav>
+
+    <a id="top"></a>
+    <img src="backg.png" alt="Home Screen" class="fullscreen-image"> 
+    <div class="profile">
+        <img src="head.png" alt="Your Image" class="adjustable-image">
+        <div class="name">RYAN KEN M. CASEM</div>
+        <div class="contact-info">
+            <a href="https://www.facebook.com/ken.casem" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/ryynocerous/" target="_blank">Instagram</a>
+        </div>
+    </div>
+    <div id="content p" class="content" style="top:200% ;">
+        <p>Hello there! My name is Ryan Ken M. Casem and I am currently a 3rd year college student enrolled in the program Bachelor of Science in Computer Engineering at the University of the East-Manila. <br>
+        Hopefully, if I successfully survive my college journey I'll be able to have a stable and satisfying job in the future, fingers crossed. I hope to see you future Computer Engineers in the field! Padayon!</p>
+    </div>
+</body>
+</html>
